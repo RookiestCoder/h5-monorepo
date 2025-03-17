@@ -1,0 +1,188 @@
+// 遵循 BEM 的命名规则
+@import './mixins/_mixins.scss';
+@import './common/main.scss';
+
+@include b(dialog-trade-confirm) {
+  width: 100%;
+  .mono-dialog-trade-confirm {
+    min-height: 212px;
+    padding-bottom: var(--safeBottomHeight);
+    background-color: var(--overlay_bg);
+    overflow: hidden;
+
+    &-top {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      box-sizing: content-box;
+
+      &-title {
+        flex: 1 0 0;
+        @include text-overflow();
+        text-align: center;
+        color: var(--text_primary);
+        font-size: var(--fontSize18);
+        line-height: var(--lineHeight18);
+        padding: 24px 16px 20px;
+        font-weight: bold;
+      }
+
+      &-close {
+        color: var(--text_primary);
+        font-size: var(--fontSize24);
+        position: absolute;
+        right: 16px;
+        top: 23px;
+
+        .icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    &-top-tip {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: content-box;
+      line-height: 24px;
+
+      &-content {
+        flex: 1;
+        font-size: var(--fontSize16);
+        line-height: var(--lineHeight24);
+        color: var(--text_primary);
+        font-weight: bold;
+        word-wrap: break-word;
+        word-break: break-all;
+        padding: 0px 16px 0px 16px;
+      }
+    }
+
+    &-center {
+      width: 100%;
+      line-height: 24px;
+      font-size: var(--fontSize14);
+      min-height: 60px;
+      max-height: 360px;
+      overflow: scroll;
+
+      .line {
+        width: 100%;
+        margin-top: 21px;
+        padding: 0px 16px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        overflow: hidden;
+
+        &-left {
+          flex: 1;
+          @include text-overflow();
+          font-size: var(--fontSize16);
+          color: var(--text_secondary);
+        }
+
+        &-right {
+          width: 220px;
+          text-align: right;
+          font-size: var(--fontSize16);
+          color: var(--text_primary);
+        }
+      }
+    }
+
+    &-tip {
+      padding: 0 16px 0 16px;
+      max-height: 80px;
+      overflow: scroll;
+      margin-top: 10px;
+
+      &-top {
+        display: flex;
+        font-size: var(--fontSize12);
+        color: var(--text_tertiary);
+        line-height: var(--lineHeight18);
+        font-weight: 400;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+
+        &-right {
+        }
+      }
+
+      &-bottom {
+        width: 100%;
+        min-height: 50px;
+        padding: 12px;
+        background: var(--text_hint_bg);
+        border-radius: 8px;
+        font-size: var(--fontSize14);
+        color: var(--text_stock_overview_price);
+        line-height: var(--lineHeight24);
+        font-weight: 400;
+      }
+    }
+
+    &-bottom {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      border-top: 6px solid var(--page_bg);
+
+      &-left {
+        flex: 1 0 0;
+        height: 58px;
+        font-size: var(--fontSize18);
+        line-height: var(--lineHeight18);
+        padding: 0 20px;
+        color: var(--text_secondary);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 400;
+        @include text-overflow();
+      }
+
+      &-separate {
+        width: 1px;
+        height: 24px;
+        background: var(--page_bg);
+      }
+
+      &-right {
+        flex: 1 0 0;
+        height: 58px;
+        font-size: var(--fontSize18);
+        line-height: var(--lineHeight18);
+        padding: 0 20px;
+        color: var(--text_brand);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 400;
+        @include text-overflow();
+      }
+      &-right_buy {
+        color: var(--text_buy);
+      }
+      &-right:active,
+      &-left:active {
+        background: var(--btn_white_pressed);
+      }
+    }
+  }
+}

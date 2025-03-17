@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "paths": {
+      // 内部模块都指向 src/index.ts, 会有更好的代码跳转体验.
+      "@h/*": ["packages/*/src"],
+      "@editor/*": ["packages/editor/src/*"]
+    },
+    "types": ["node"]
+  },
+  "exclude": ["**/dist/**/*"]
+}

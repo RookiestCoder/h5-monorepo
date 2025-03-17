@@ -1,0 +1,43 @@
+// 遵循 BEM 的命名规则
+@import './mixins/_mixins.scss';
+@import './common/main.scss';
+
+@include b(common-button) {
+  .common-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &-submit {
+      height: 44px;
+      width: 100%;
+      line-height: 48px;
+      border-radius: 32px;
+      background: var(--btn_primary);
+      text-align: center;
+      flex-flow: row nowrap;
+      font-size: var(--fontSize16);
+      color: var(--text_btn_primary);
+    }
+
+    &-arrow {
+      background: var(--btn_primary);
+      color: var(--text_btn_primary);
+    }
+    &-sell {
+      background-color: var(--btn_sell);
+      color: var(--text_btn_primary);
+    }
+
+    &-submit-disable {
+      background: var(--btn_primary_disabled);
+      color: var(--text_btn_primary_disabled);
+      pointer-events: none;
+    }
+    &-submit-disable-sell {
+      background-color: var(--btn_sell_disabled);
+      color: var(--text_btn_primary_disabled);
+      pointer-events: none;
+    }
+  }
+}

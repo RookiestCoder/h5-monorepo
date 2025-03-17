@@ -1,0 +1,5 @@
+{
+  "common-button": "./src/components/common-button/index.js",
+  "dialog-trade-confirm": "./src/components/dialog-trade-confirm/index.js",
+  "title-bar": "./src/components/title-bar/index.js"
+}

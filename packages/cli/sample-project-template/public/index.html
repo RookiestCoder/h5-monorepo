@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script>
+      // 换肤 url 地址里带有 theme=dark
+      /**
+       * 获取URL参数
+       * @param name 需要获取的参数key
+       * @return
+       */
+      function getLocationHrefParam(name) {
+        // 构造一个含有目标参数的正则表达式对象
+        var r = new RegExp('(\\?|#|&)' + name + '=([^&#]*)(&|#|$)');
+        var m = window.location.href.match(r);
+        if (r !== null) return decodeURIComponent(!m ? '' : m[2]);
+        return null;
+      }
+
+      var theme = getLocationHrefParam('theme');
+      const nightThemeArray = ['night', 'black', 'dark'];
+      window.theme = nightThemeArray.includes(theme) ? 'dark' : 'default';
+      document.querySelector('html').classList.add(theme === 'dark' ? 'h5-theme-dark' : 'h5-theme-light');
+    </script>
+    <style>
+      html,
+      body,
+      #h5-module-1 {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please
+        enable it to continue.</strong
+      >
+    </noscript>
+    <div id="h5-module"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

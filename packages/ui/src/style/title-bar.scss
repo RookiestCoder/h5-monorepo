@@ -1,0 +1,71 @@
+@import './mixins/_mixins.scss';
+@import './common/main.scss';
+
+@include b(title-bar) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: 16px 0;
+  flex-flow: row nowrap;
+  z-index: 99;
+  height: 56px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background: var(--page_bg);
+
+  .left {
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin: 0 0 0 16px;
+      color: var(--ic_color_primary);
+    }
+
+    .text {
+      padding: 0 0 0 16px;
+      font-size: var(--fontSize14);
+      color: var(--text_primary);
+    }
+  }
+
+  .center {
+    flex: 2;
+    text-align: center;
+    font-size: var(--fontSize18);
+    line-height: var(--lineHeight18);
+    color: var(--text_navbar);
+    font-weight: 400;
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    .icon-div {
+      margin: 0 16px 0 4px;
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      color: var(--ic_color_primary);
+    }
+
+    .text {
+      padding: 0 16px 0 0;
+      font-size: var(--fontSize16);
+      line-height: var(--lineHeight22);
+      color: var(--text_secondary);
+    }
+  }
+}

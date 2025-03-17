@@ -1,0 +1,55 @@
+/*最外层class*/
+.home_page {
+  .page-style();
+  .main {
+    .main-style(56px,0px);
+  }
+  /deep/ .van-tabs {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  /deep/ .van-tabs__content {
+    position: absolute;
+    width: 100%;
+    top: 44px;
+    bottom: 0px;
+    overflow: hidden;
+  }
+
+  /deep/ .van-tabs__wrap {
+    position: absolute;
+    width: 100%;
+    height: 44px;
+    background-color: var(--primary_bg);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+    .van-tabs__nav {
+      height: 44px;
+      background-color: var(--primary_bg);
+
+      .van-tab {
+        font-size: var(--fontSize16);
+        color: var(--text_secondary);
+        line-height: 20px;
+        margin: 0 16px;
+      }
+
+      .van-tab--active {
+        color: var(--text_primary);
+        font-weight: 500;
+      }
+    }
+
+    .van-tabs__line {
+      width: 12px;
+      height: 3px;
+      background: var(--bg_tab_line);
+      border-radius: 2px;
+      bottom: 18px;
+      z-index: 1000;
+    }
+  }
+}

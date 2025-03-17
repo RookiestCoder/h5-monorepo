@@ -1,0 +1,80 @@
+@mixin text-overflow($overflow: ellipsis) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: $overflow;
+}
+
+@mixin dialog-common($width: 84%, $height: 80%) {
+  width: $width;
+  max-height: $height;
+}
+
+@mixin padding-l($left: 8px) {
+  padding: 0 0 0 $left;
+}
+
+@mixin padding-r($right: 8px) {
+  padding: 0 $right 0 0;
+}
+
+@mixin padding($t-r-b-r: 12px) {
+  padding: $t-r-b-r;
+}
+
+@mixin padding($t-r-b-r: 12px) {
+  padding: $t-r-b-r;
+}
+
+@mixin border-b-1px($color: var(--border_bg), $left: 0) {
+  position: relative;
+  &::after {
+    display: block;
+    position: absolute;
+    left: $left;
+    right: 0;
+    bottom: 0;
+    content: ' ';
+    height: 1px;
+    border-bottom: 1px solid $color;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}
+
+/* 顶部1px线条 */
+@mixin border-t-1px($color: var(--border_bg), $left: 0) {
+  position: relative;
+  &::after {
+    display: block;
+    position: absolute;
+    left: $left;
+    right: 0;
+    top: 0;
+    content: ' ';
+    height: 1px;
+    border-top: 1px solid $color;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}
+
+.van-overlay {
+  background-color: var(--bg_mask);
+}
+
+.margin-b-8px {
+  margin-bottom: 8px;
+}
+.margin-b-12px {
+  margin-bottom: 12px;
+}
+.margin-b-4px {
+  margin-bottom: 4px;
+}
+.margin-t-8px {
+  margin-top: 8px;
+}

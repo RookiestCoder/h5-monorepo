@@ -1,0 +1,367 @@
+/* Brand color */
+:root {
+  --brand: #2e78fa; /*品牌色*/
+}
+
+/* Background colors */
+:root {
+  --page_bg: #f5f6fa; /*底层背景*/
+  --primary_bg: #ffffff; /*一层背景*/
+  --secondary_bg: #f8f9fa; /*二层背景*/
+  --tertiary_bg: #fafafc; /*三层背景*/
+  --overlay_bg: #ffffff; /*弹窗背景*/
+  --list_bg: #ffffff; /*列表背景*/
+  --list_selected_bg: #fff5f5; /*当前选中列表背景*/
+  --list_bg_pressed: #ffffff; /*列表按下状态背景*/
+  --list_line: rgba(0, 0, 0, 0.07); /*列表分割线*/
+  --input_toast_bg: rgba(0, 0, 0, 0.8); /*toast背景*/
+  --bg_mask: rgba(0, 0, 0, 0.5); /*弹框遮罩*/
+}
+
+/* Text Colors */
+:root {
+  /* Primary Text Colors */
+  --text_primary: #1b2330; /* 突出文字/内容标题 */
+  --text_secondary: #606877; /* 正文内容 */
+  --text_tertiary: #9aa4b6; /* 次要内容 */
+  --text_disabled: #9aa4b6; /* 不可用内容 */
+  --text_brand: #2e78fa; /* 品牌色文字按钮/退出登录 */
+  --text_input_hint: #1b2330; /* 输入框辅助内容 */
+  --text_transfer_amount: #1b2330; /* 可转金额 */
+  --text_table_header: #9da6b6; /* 表头 */
+  --text_input_tip: #9aa4b6; /* 输入框暗提示文字 */
+  --text_btn_primary: #ffffff; /* 主按钮上文字 */
+  --text_btn_primary_disabled: #ffffff; /* 主按钮上文字-不可用 */
+  --text_btn_secondary: #1b2330; /* 次要按钮上文字 */
+  --text_btn_secondary_disabled: rgba(154, 164, 182, 0.2); /* 次要按钮上文字-不可用 */
+  --text_btn_tertiary: #ffffff; /* 辅助按钮文字 */
+  --text_btn_tertiary_disabled: rgba(46, 120, 250, 0.4); /* 辅助按钮文字-不可用 */
+  --text_btn_linear: #606877; /* 线性按钮文字 */
+  --text_btn_linear_disabled: rgba(96, 104, 119, 0.4); /* 线性按钮文字-不可用 */
+  --text_label: #ffffff; /* 有色标签文字 */
+  --text_link: #2e78fa; /* 可点击文字/文字链/文字按钮 */
+  --text_stock_overview_price: #ff6a00; /* 综合屏均价/领先 */
+  --text_rise: #ff3d36; /* 涨幅/涨值文字 */
+  --text_drop: #02a374; /* 跌幅/跌值文字 */
+  --text_flat: #606877; /* 股票平停值 */
+  --text_warning: #ff3d36; /* 警示色/失败原因文字 */
+  --text_notifn: #2e78fa; /* 通知文字 */
+  --text_buy: #ff3d36; /* 买入 */
+  --text_sell: #2e78fa; /* 卖出 */
+  --text_battery_status1: #000000; /* 电池栏文字颜色-1 */
+  --text_battery_status2: #ffffff; /* 电池栏文字颜色-2 */
+  --text_navbar: #1b2330; /* 导航栏文字 */
+  --text_navbar_subtitle: #9aa4b6; /* 导航副标题 */
+  --text_home_search_placeholder: #ffffff; /* 首页banner状态时搜索输入框提示文字 */
+  --text_home_search_placeholder_swipe: #888888; /* 首页banner状态时搜索输入框提示文字_上滑 */
+  --text_tab_text_selected: #222222; /* Tab文字颜色-选中 */
+  --text_tab_unselected: #606877; /* Tab文字颜色-未选中 */
+  --text_nav_top_selected: #1b2330; /* 导航栏-Tab-文字-选中 */
+  --text_top_nav_unselected: #606877; /* 导航栏-Tab-文字-未选中 */
+  --text_toast: #ffffff; /* toast文字 */
+  --cr_h: #1b2330; /* 担保品比例>300% */
+  --cr_m: #1b2330; /* 担保品比例300%≥N>150% */
+  --cr_l: #1b2330; /* 担保品比例≤150% */
+  --text_win_ipo_title: #a87000; /*中新股卡片文案*/
+  --text_win_ipo_date: #a87000; /*中新股扣款日期*/
+  --bg_win_ipo_date: #f1e3c6; /*中新股扣款日期背景*/
+  --text_win_ipo_transfer: #2e78fa; /*中新股银证转账*/
+  --btn_win_ipo_transfer_border: #2e78fa; /*中新股银证转账按钮边框*/
+  --ic_color_quaternary: rgba(27, 35, 48, 0.3); /*搜索输入框清除*/
+}
+
+/* Button Colors */
+:root {
+  /* Primary Buttons */
+  --btn_primary: linear-gradient(to right, rgba(69, 172, 255, 1), rgba(46, 120, 250, 1)); /* 主按钮 */
+  --btn_primary_pressed: #2e7ee5; /* 主按钮按下 */
+  --btn_primary_disabled: rgba(46, 126, 229, 0.3);
+
+  /* Secondary Buttons */
+  --btn_secondary: #f8f9fa; /* 次按钮 */
+  --btn_secondary_pressed: #f5f6fa; /* 次按钮按下 */
+  --btn_secondary_disabled: #f8f9fa; /* 次按钮不可用 */
+  --btn_market_other: #f3f3f5; /* 市场-其他按钮背景 */
+  --btn_tertiary: #2e78fa; /* 辅助按钮 */
+  --btn_tertiary_pressed: #ecf1fa; /* 辅助按钮按下 */
+  --btn_tertiary_disabled: rgba(241, 246, 255, 0.4); /* 辅助按钮-不可用 */
+  --btn_linear: rgba(96, 104, 119, 0.6); /* 线性按钮 */
+  --btn_linear_disabled: rgba(96, 104, 119, 0.4); /* 线性按钮-不可用 */
+  --btn_white: #ffffff; /* 白色辅助按钮 */
+  --btn_white_pressed: #e5e5e5; /* 白色辅助按钮-不可用 */
+  --btn_buy: #ff3d36; /* 买入按钮背景 */
+  --btn_buy_disabled: rgba(255, 61, 54, 0.3); /* 买入按钮背景-不可用 */
+  --btn_buy_pressed: #e63730; /* 买入按钮背景-按下 */
+
+  --btn_sell: #3d8df5; /* 证券卖出按钮背景/期货开平仓按钮背景 */
+  --btn_sell_disabled: rgba(61, 141, 245, 0.4); /* 证券卖出按钮背景/期货开平仓按钮背景-不可用 */
+  --btn_sell_pressed: rgba(46, 126, 229, 1); /* 卖出按钮背景-按下 */
+
+  --btn_short: #0aa859; /* 期货卖出按钮背景 */
+  --btn_short_disabled: rgba(10, 168, 89, 0.4); /* 期货卖出按钮背景-不可用 */
+  --tab_border_selected: #2e78fa; /* 线性选择按钮-选中 */
+  --tab_border_normal: rgba(0, 0, 0, 0.07); /* 线性选择按钮-未选中 */
+  --btn_toggle_selected: rgba(46, 120, 250, 0.05); /* 面性选择按钮背景色-选中 */
+  --btn_toggle_normal: #f8f8fa; /* 面性选择按钮背景色-未选中 */
+}
+
+/* Icon Colors */
+:root {
+  --ic_color_primary: #1b2330; /* 顶部导航 搜索、编辑、返回、我的等等、关闭 */
+  --ic_color_disabled: #9aa4b6; /* 交易模块 +不可点击、-不可点击、列表右箭头不可点击 */
+  --ic_color_secondary: #606877; /* 交易模块 + - 列表右箭头 */
+  --ic_color_tertiary: #9aa4b6; /* 自选  指数展开、指数收起 */
+  --ic_color_brand: #2e78fa; /* 时间轴圆圈颜色 */
+  --ic_color_notifn: #ff4a1d; /* 通知图标 */
+}
+
+/* Other */
+:root {
+  /* Border Background */
+  --border_bg: var(--list_line);
+
+  /* Font Sizes */
+  --fontSize32: 32px;
+  --fontSize30: 30px;
+  --fontSize28: 28px;
+  --fontSize24: 24px; /* MAX2 */
+  --fontSize22: 22px; /* MAX1 */
+  --fontSize20: 20px; /* H1 */
+  --fontSize18: 18px;
+  --fontSize17: 17px;
+  --fontSize16: 16px; /* H2 */
+  --fontSize15: 15px;
+  --fontSize14: 14px; /* H3 */
+  --fontSize13: 13px;
+  --fontSize12: 12px; /* H4 */
+  --fontSize11: 11px; /* H4 */
+  --fontSize10: 10px; /* H5 */
+  --fontSize9: 9px; /* H6 */
+
+  /* Line Height */
+  --lineHeight32: 32px;
+  --lineHeight30: 30px;
+  --lineHeight28: 28px;
+  --lineHeight24: 24px;
+  --lineHeight22: 22px;
+  --lineHeight20: 20px;
+  --lineHeight18: 18px;
+  --lineHeight16: 16px;
+  --lineHeight14: 14px;
+  --lineHeight12: 12px;
+  --lineHeight10: 10px;
+
+  /**safe area**/
+  --safeBottomHeight: 28px;
+  /**common-input**/
+  --common_input_title_width: auto;
+  /* padding */
+  --common_padding: 16px;
+  /**折叠屏适配,根节点字体大小**/
+  --h5HtmlFontSize: 34.6px;
+}
+
+/* Label Colors*/
+:root {
+  --hs_t_c0: #ffffff; /* 白色 */
+  --hs_t_c1: rgba(255, 51, 59, 0.12); /* 沪港/CDR/沪A/沪B/新三板/中小板/创业板-背景 */
+  --hs_t_c2: rgba(255, 124, 10, 0.12); /* 融/Q/O/京/沪债/深债/京债/新三板债/基金/期货/期权-背景 */
+  --hs_t_c3: rgba(
+    71,
+    122,
+    253,
+    0.12
+  ); /* 科/注/创新/通/北证/指数/科创板/B转H/其他/京指/沪指/深指/三板指-背景/期权期背景 */
+  --hs_t_c4: rgba(111, 77, 255, 0.12); /* 深港/HK/US/GDR/深A/深B/深港/美股-背景/期权备-背景 */
+  --hs_t_c5: rgba(0, 0, 0, 0.08); /* 原沪港/原深港-背景 */
+  --hs_t_c6: #ff333b; /* 沪港/CDR/沪A/沪B/新三板/中小板/创业板-文字/信息地雷—龙虎-描边和文字 */
+  --hs_t_c7: #ff7c0a; /* 融/Q/O/京/沪债/深债/京债/新三板债/基金/期货/期权-文字/信息地雷—解禁-描边和文字 */
+  --hs_t_c8: #477afd; /* 科/注/创新/通/北证/指数/科创板/B转H/其他/京指/沪指/深指/三板指-文字/信息地雷—业绩报告-描边和文字/期权期文字 */
+  --hs_t_c9: #6f4dff; /* 深港/HK/US/GDR/深A/深B/深港/美股-文字/信息地雷—股权质押-描边和文字/期权备文字 */
+  --hs_t_c10: #fc2dfc; /* 信息地雷-增减持-描边和文字/期权义&保文字 */
+  --hs_t_c11: #0dcedb; /* 信息地雷-大宗-描边和文字 */
+  --hs_t_c12: #888888; /* 原沪港/原深港-文字 */
+  --hs_t_c13: rgba(252, 45, 252, 0.1); /* 期权义/保-背景 */
+}
+
+/* Tag Colors*/
+:root {
+  --tag_ipo_bookbuilding_bg: rgba(46, 120, 250, 0.2); /*询价发行-背景*/
+  --tag_ipo_bookbuilding_txt: #2e78fa; /*询价发行-文字*/
+  --tag_market_yhg_bg: rgba(46, 120, 250, 0.08); /*沪港（原）-描边*/
+  --tag_market_yhg_txt: #2e78fa; /*沪港（原）-文本*/
+  --tag_market_ysg_bg: rgba(46, 120, 250, 0.08); /*深港（原）-描边*/
+  --tag_market_ysg_txt: #2e78fa; /*深港（原）-文本*/
+  --tag_market_ke_bg: rgba(255, 61, 54, 0.2); /*科-描边*/
+  --tag_market_ke_txt: #ff3d36; /*科-文本*/
+  --tag_market_chuangxin_bg: rgba(255, 61, 54, 0.2); /*创新-描边*/
+  --tag_market_chuangxin_txt: #ff3d36; /*创新-文本*/
+  --tag_search_hua_bg: rgba(255, 61, 54, 0.2); /*上交所A股-背景(沪a)*/
+  --tag_search_hua_txt: #ff3d36; /*上交所A股-文本*/
+  --tag_search_shena_bg: rgba(255, 61, 54, 0.2); /*深交所A股-背景*/
+  --tag_search_shena_txt: #ff3d36; /*深交所A股-文本*/
+  --tag_market_jing_bg: rgba(255, 61, 54, 0.2); /*北交所标签-描边*/
+  --tag_market_jing_txt: #ff3d36; /*北交所标签-文本*/
+  --tag_deal_mairu_bg: rgba(255, 61, 54, 0.08); /*普买/融买-背景*/
+  --tag_deal_mairu_txt: #ff3d36; /*普买/融买-文本*/
+  --tag_deal_maichu_bg: rgba(46, 120, 250, 0.08); /*普卖/融卖-背景*/
+  --tag_deal_maichu_txt: #2e78fa; /*v普卖/融卖-文本*/
+}
+
+/* Background colors */
+.h5-theme-dark {
+  --page_bg: #020202; /*底层背景*/
+  --primary_bg: #121212; /*一层背景*/
+  --secondary_bg: #1b1b1b; /*二层背景*/
+  --tertiary_bg: #161719; /*三层背景*/
+  --overlay_bg: #121212; /*弹窗背景*/
+  --list_bg: #121212; /*列表背景*/
+  --list_selected_bg: #000000; /*当前选中列表背景*/
+  --list_bg_pressed: #121212; /*列表按下状态背景*/
+  --list_line: rgba(0, 0, 0, 0.08); /*列表分割线*/
+  --input_toast_bg: rgba(255, 255, 255, 0.2); /*toast背景*/
+  --bg_mask: rgba(0, 0, 0, 0.5); /*弹框遮罩*/
+}
+
+/* Text Colors */
+.h5-theme-dark {
+  --text_primary: #e5e5e5; /*突出文字/内容标题*/
+  --text_secondary: #8d8d8d; /*正文内容*/
+  --text_tertiary: #5e5e5e; /*次要内容*/
+  --text_disabled: #5e5e5e; /*不可用内容*/
+  --text_brand: #4d8dff; /*品牌色文字按钮/退出登录*/
+  --text_input_hint: #e5e5e5; /*输入框辅助内容*/
+  --text_transfer_amount: #e5e5e5; /*可转金额*/
+  --text_table_header: #5e5e5e; /*表头*/
+  --text_input_tip: #5e5e5e; /*输入框暗提示文字*/
+  --text_btn_primary: #ffffff; /*主按钮上文字*/
+  --text_btn_primary_disabled: #ffffff; /*主按钮上文字-不可用*/
+  --text_btn_secondary: #e5e5e5; /*次要按钮上文字*/
+  --text_btn_secondary_disabled: rgba(94, 94, 94, 0.2); /*次要按钮上文字-不可用*/
+  --text_btn_tertiary: #ffffff; /*辅助按钮文字*/
+  --text_btn_tertiary_disabled: rgba(77, 141, 255, 0.4); /*辅助按钮文字-不可用*/
+  --text_btn_linear: #8d8d8d; /* 线性按钮文字 */
+  --text_btn_linear_disabled: rgba(141, 141, 141, 0.4); /* 线性按钮文字-不可用 */
+  --text_label: #ffffff; /*有色标签文字*/
+  --text_link: #4d8dff; /*可点击文字/文字链/文字按钮*/
+  --text_stock_overview_price: #ff6a00; /*综合屏均价/领先*/
+  --text_rise: #e64845; /*涨幅/涨值文字*/
+  --text_drop: #02996d; /*跌幅/跌值文字*/
+  --text_flat: #8d8d8d; /*股票平停值*/
+  --text_warning: #e64845; /*警示色/失败原因文字*/
+  --text_notifn: #4d8dff; /*通知文字*/
+  --text_buy: #e64845; /*买入*/
+  --text_sell: #4d8dff; /*卖出*/
+  --text_battery_status1: #ffffff; /*电池栏文字颜色-1*/
+  --text_battery_status2: #000000; /*电池栏文字颜色-2*/
+  --text_navbar: #e5e5e5; /*导航栏文字*/
+  --text_navbar_subtitle: #5e5e5e; /*导航副标题*/
+  --text_home_search_placeholder: #ffffff; /*首页banner状态时搜索输入框提示文字*/
+  --text_home_search_placeholder_swipe: #ffffff; /*首页banner状态时搜索输入框提示文字_上滑*/
+  --text_tab_text_selected: #ebecf0; /*Tab文字颜色-选中*/
+  --text_tab_unselected: #8d8d8d; /*Tab文字颜色-未选中*/
+  --text_nav_top_selected: #e5e5e5; /*导航栏-Tab-文字-选中*/
+  --text_top_nav_unselected: #8d8d8d; /*导航栏_Tab-文字-未选中*/
+  --text_toast: #ffffff; /*toast文字*/
+  --cr_h: #e5e5e5; /* 担保品比例>300% */
+  --cr_m: #e5e5e5; /* 担保品比例300%≥N>150% */
+  --cr_l: #e5e5e5; /* 担保品比例≤150% */
+  --text_win_ipo_title: #8a5c00; /*中新股卡片文案*/
+  --text_win_ipo_date: #8A5CO0; /*中新股扣款日期*/
+  --bg_win_ipo_date: #ad9c79; /*中新股扣款日期背景*/
+  --text_win_ipo_transfer: #4d8dff; /*中新股银证转账*/
+  --btn_win_ipo_transfer_border: #4d8dff; /*中新股银证转账按钮边框*/
+  --ic_color_quaternary: rgba(229, 229, 229, 0.3); /*搜索输入框清除*/
+}
+
+/* Button Colors */
+.h5-theme-dark {
+  /* Primary Buttons */
+  --btn_primary: linear-gradient(to right, rgba(69, 172, 255, 1), rgba(77, 141, 255, 1)); /* 主按钮 */
+  --btn_primary_pressed: #3072e8; /*主按钮按下*/
+  --btn_primary_disabled: rgba(77, 141, 255, 0.4);
+
+  /* Secondary Buttons */
+  --btn_secondary: #1b1b1b; /*次按钮*/
+  --btn_secondary_pressed: #3072e8; /*次按钮按下*/
+  --btn_secondary_disabled: rgba(27, 27, 27, 0.2); /*次按钮不可用*/
+  --btn_market_other: #454545; /*市场_其他按钮背景*/
+  --btn_tertiary: #4d8dff; /*辅助按钮*/
+  --btn_tertiary_pressed: #edf2fa; /*辅助按钮按下*/
+  --btn_tertiary_disabled: rgba(24, 34, 51, 0.4); /*辅助按钮_不可用*/
+  --btn_linear: rgba(141, 141, 141, 0.6); /*线性按钮*/
+  --btn_linear_disabled: rgba(141, 141, 141, 0.4); /*线性按钮_不可用*/
+  --btn_white: #121212; /*白色辅助按钮*/
+  --btn_white_pressed: #2e2e2e; /*白色辅助按钮_不可用*/
+  --btn_buy: #e64845; /*买入按钮背景*/
+  --btn_buy_disabled: rgba(230, 72, 69, 0.3); /*买入按钮背景_不可用*/
+  --btn_buy_pressed: #ce403d; /* 买入按钮背景-按下 */
+
+  --btn_sell: #3d8df5; /*证券卖出按钮背景/期货开平仓按钮背景*/
+  --btn_sell_disabled: rgba(61, 141, 245, 0.2); /*证券卖出按钮背景/期货开平仓按钮背景_不可用*/
+  --btn_sell_pressed: rgba(46, 126, 229, 1); /* 卖出按钮背景-按下 */
+
+  --btn_short: #0aa859; /*期货卖出按钮背景*/
+  --btn_short_disabled: rgba(10, 168, 89, 0.2); /*期货卖出按钮背景_不可用*/
+  --tab_border_selected: #4d8dff; /*线性选择按钮_选中*/
+  --tab_border_normal: rgba(255, 255, 255, 0.09); /*线性选择按钮_未选中*/
+  --btn_toggle_selected: rgba(77, 141, 255, 0.8); /*面性选择按钮背景色_选中*/
+  --btn_toggle_normal: #1b1b1b; /*面性选择按钮背景色-未选中*/
+}
+
+/* Icon Colors */
+.h5-theme-dark {
+  --ic_color_primary: #e5e5e5; /*顶部导航 搜索、编辑、返回、我的等等、关闭*/
+  --ic_color_disabled: #979797; /*交易模块 +不可点击、_不可点击、列表右箭头不可点击*/
+  --ic_color_secondary: #8d8d8d; /*交易模块 + _ 列表右箭头*/
+  --ic_color_tertiary: #979797; /*自选  指数展开、指数收起*/
+  --ic_color_brand: #4d8dff; /* 时间轴圆圈颜色 */
+  --ic_color_notifn: #ff4a1d; /* 通知图标 */
+}
+
+/* Label Colors */
+.h5-theme-dark {
+  --hs_t_c0: #ffffff; /* 白色 */
+  --hs_t_c1: rgba(255, 51, 59, 0.2); /* 沪港/CDR/沪A/沪B/新三板/中小板/创业板-背景 */
+  --hs_t_c2: rgba(255, 124, 10, 0.2); /* 融/Q/O/京/沪债/深债/京债/新三板债/基金/期货/期权-背景 */
+  --hs_t_c3: rgba(
+    71,
+    122,
+    253,
+    0.2
+  ); /* 科/注/创新/通/北证/指数/科创板/B转H/其他/京指/沪指/深指/三板指-背景/期权期背景 */
+  --hs_t_c4: rgba(111, 77, 255, 0.2); /* 深港/HK/US/GDR/深A/深B/深港/美股-背景/期权备-背景 */
+  --hs_t_c5: rgba(255, 255, 255, 0.15); /* 原沪港/原深港-背景 */
+  --hs_t_c6: #ff333b; /* 沪港/CDR/沪A/沪B/新三板/中小板/创业板-文字/信息地雷—龙虎-描边和文字 */
+  --hs_t_c7: #ff7c0a; /* 融/Q/O/京/沪债/深债/京债/新三板债/基金/期货/期权-文字/信息地雷—解禁-描边和文字 */
+  --hs_t_c8: #477afd; /* 科/注/创新/通/北证/指数/科创板/B转H/其他/京指/沪指/深指/三板指-文字/信息地雷—业绩报告-描边和文字/期权期文字 */
+  --hs_t_c9: #6f4dff; /* 深港/HK/US/GDR/深A/深B/深港/美股-文字/信息地雷—股权质押-描边和文字/期权备文字 */
+  --hs_t_c10: #fc2dfc; /* 信息地雷-增减持-描边和文字/期权义&保文字 */
+  --hs_t_c11: #0dcedb; /* 信息地雷-大宗-描边和文字 */
+  --hs_t_c12: #888888; /* 原沪港/原深港-文字 */
+  --hs_t_c13: rgba(252, 45, 252, 0.2); /* 期权义/保-背景 */
+}
+
+/* Tag Colors*/
+.h5-theme-dark {
+  --tag_ipo_bookbuilding_bg: rgba(77, 141, 255, 0.3); /*询价发行-背景*/
+  --tag_ipo_bookbuilding_txt: #4d8dff; /*询价发行-文字*/
+  --tag_market_yhg_bg: rgba(77, 141, 255, 0.08); /*沪港（原）-描边*/
+  --tag_market_yhg_txt: #4d8dff; /*沪港（原）-文本*/
+  --tag_market_ysg_bg: rgba(77, 141, 255, 0.08); /*深港（原）-描边*/
+  --tag_market_ysg_txt: #4d8dff; /*深港（原）-文本*/
+  --tag_market_ke_bg: rgba(230, 72, 69, 0.2); /*科-描边*/
+  --tag_market_ke_txt: #e64845; /*科-文本*/
+  --tag_market_chuangxin_bg: rgba(230, 72, 69, 0.2); /*创新-描边*/
+  --tag_market_chuangxin_txt: #e64845; /*创新-文本*/
+  --tag_search_hua_bg: rgba(230, 72, 69, 0.2); /*上交所A股-背景(沪a)*/
+  --tag_search_hua_txt: #e64845; /*上交所A股-文本*/
+  --tag_search_shena_bg: rgba(230, 72, 69, 0.2); /*深交所A股-背景*/
+  --tag_search_shena_txt: #e64845; /*深交所A股-文本*/
+  --tag_market_jing_bg: rgba(230, 72, 69, 0.2); /*北交所标签-描边*/
+  --tag_market_jing_txt: #e64845; /*北交所标签-文本*/
+  --tag_deal_mairu_bg: rgba(230, 72, 69, 0.1); /*普买/融买-背景*/
+  --tag_deal_mairu_txt: #e64845; /*普买/融买-文本*/
+  --tag_deal_maichu_bg: rgba(77, 141, 255, 0.1); /*普卖/融卖-背景*/
+  --tag_deal_maichu_txt: #4d8dff; /*v普卖/融卖-文本*/
+}

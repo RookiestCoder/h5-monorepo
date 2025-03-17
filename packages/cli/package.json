@@ -1,0 +1,25 @@
+{
+  "name": "@monorepo/cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "bin": {
+    "monorepo": "bin/monorepo.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -b tsconfig.build.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cac": "^6.7.14",
+    "ejs": "^3.1.6",
+    "prompts": "2.4.2"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.1.1",
+    "@types/prompts": "^2.4.1",
+    "tslib": "2.4.0"
+  }
+}

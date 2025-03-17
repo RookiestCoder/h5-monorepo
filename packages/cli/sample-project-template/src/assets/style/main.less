@@ -1,0 +1,115 @@
+/* 折叠屏适配使用 */
+.html-fold-screen {
+  font-size: var(--jtHtmlFontSize) !important;
+}
+
+.iconfont {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pages {
+  .page-style();
+  overflow: hidden;
+  font-size: var(--fontSize14);
+  font-family: HarmonyOS Sans SC;
+}
+
+.text-color-rise {
+  color: var(--text_rise);
+}
+
+.text-color-drop {
+  color: var(--text_drop);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.margin-b-8px {
+  margin-bottom: 8px;
+}
+.margin-b-4px {
+  margin-bottom: 4px;
+}
+
+//主按钮按下
+.touch-btn_primary-active {
+  background: var(--btn_primary_pressed) !important;
+}
+
+//次按钮按下
+.touch-btn_secondary-active {
+  background-color: var(--btn_secondary_pressed) !important;
+}
+
+//辅按钮按下
+.touch-btn_tertiary-active {
+  background-color: var(--btn_tertiary_pressed) !important;
+}
+
+//面性选择按钮按下
+.touch-btn_toggle-active {
+  background-color: var(--btn_toggle_selected) !important;
+}
+
+//列表按下
+.touch-list_bg-active {
+  background-color: var(--list_bg_pressed) !important;
+}
+
+.font-size-12 {
+  font-size: var(--fontSize12) !important;
+}
+
+.font-size-14 {
+  font-size: var(--fontSize14) !important;
+}
+
+.font-size-16 {
+  font-size: var(--fontSize16) !important;
+}
+
+.font-size-18 {
+  font-size: var(--fontSize18) !important;
+}
+
+.font-size-20 {
+  font-size: var(--fontSize20) !important;
+}
+
+.font-size-22 {
+  font-size: var(--fontSize22) !important;
+}
+
+.stock-value-zero {
+  color: var(--text_flat) !important;
+}
+
+.stock-value-up {
+  color: var(--text_rise) !important;
+}
+
+.stock-value-down {
+  color: var(--text_drop) !important;
+}
+
+.stock-value-nodata {
+  color: var(--text_flat) !important;
+  font-family: PingFangSC-Regular, PingFang SC !important;
+}
+
+//自定义指令-文字缩略
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+//自定义指令-文字无限缩小
+.text-minimum {
+  white-space: nowrap;
+  overflow: hidden;
+}
